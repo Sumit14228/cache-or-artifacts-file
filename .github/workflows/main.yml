@@ -28,6 +28,6 @@ jobs:
            uses: actions/upload-artifact@v3.2.2
            with:
               name: nextjs build
-              path: out/
+              path: .next/
 
     
