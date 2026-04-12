@@ -10,10 +10,10 @@ jobs:
 
        steps:
          - name: Checkout Repository
-           uses: actions/checkout@v6.0.2
+           uses: actions/checkout@v4
 
          - name: setup node js
-           uses: actions/setup-node@v6.3.0
+           uses: actions/setup-node@v4
            with:
              node-version: 22.x
              cache: 'npm'
@@ -25,7 +25,7 @@ jobs:
            run: npm run build
 
          - name: Upload Build on Artifacts
-           uses: uses: actions/upload-artifact@v4
+           uses: actions/upload-artifact@v4
            with:
               name: nextjs build
               path: .next/
